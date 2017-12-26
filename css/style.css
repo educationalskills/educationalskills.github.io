@@ -2,11 +2,20 @@
 body{
   min-width: 1024px;
 }
+.logo{
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30pt;
+  font-weight: 700;
+  color: white;
+  top: 20px;
+  left: 60px;
+}
 .wrapper{
   margin: 0;
   width: 100%;
   height: 100%;
-  background-color: #62B6CB;
+  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,11 +34,44 @@ body{
   width: 900px;
   padding: 40px;
 }
+.intro{
+  display: flex;
+  justify-content: space-between;
+}
+.intro img{
+  width: 300px;
+  height: 400px;
+}
+.intro p{
+  font-family: 'Roboto', sans-serif;
+  line-height: 20pt;
+  color: white;
+  font-size: 14pt;
+  width: 450px;
+}
+.startTest{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-size: 16pt;
+  color: white;
+  margin: 0 auto;
+  margin-top: 70px;
+  width: 300px;
+  padding: 10px 10px;
+  border: 2px solid white;
+  border-radius: 100px;
+}
+.startTest:hover{
+  border: 2px solid white;
+  background-color: white;
+  color: black;
+}
 .questionCard h1{
   margin: 0 auto;
   font-family: 'Roboto';
 }
 .question{
+  text-align: center;
   margin: 0 auto;
   font-family: 'Roboto', sans-serif;
   font-size: 20pt;
@@ -39,18 +81,18 @@ body{
   font-family: 'Roboto', sans-serif;
   margin-top: 50px;
   display: flex;
-  justify-content: space-between;
+  flex-flow: column;
 }
 .answerInline{
   color: white;
   display: inline-block;
-  margin: 0 30px;
+  margin-top: 20px;
   padding: 10px 30px;
-  border: 5px solid white;
+  border: 2px solid white;
   border-radius: 100px;
 }
 .answerInline:hover{
-  border: 5px solid black;
+  border: 2px solid black;
   background-color: black;
 }
 .ease-in{
@@ -58,6 +100,9 @@ body{
 }
 .ease-out{
   transition: top 0.5s ease-out 0.5s;
+}
+#question1{
+  display: none;
 }
 #question2{
   display: none;

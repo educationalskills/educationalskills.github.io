@@ -12,6 +12,10 @@
   <script>
     $(document).ready(function(){
       var count = 0;
+      $(".startTest").click(function(){
+        $("#intro").hide("ease-out");
+        $("#question1").show();
+      });
       $("#answer1").click(function(){
         $("#question1").hide(".ease-out");
         $("#question2").show(".ease-in");
@@ -36,11 +40,24 @@
 </head>
 <body>
   <div class="wrapper">
+    <div class="logo">
+      MODERN SKILLS
+    </div>
+    <div class="questionCard" id="intro">
+      <div class="intro">
+        <img src="" alt="">
+        <p>Чтобы овладеть фундаментальными знаниями в цифровой сфере совсем не обязательно поступать в университет, даже наоборот. Интернет — это уже не будущее, а настоящее, нужно знать, как зарабатывать по-новому. Классический подход вузов и школ — не подходит для способов заработка в цифровое время. Наш четырёхмесячный интенсив по программированию, дизайну и копирайтингу поможет приобрести навыки заработка 21 века и стать многозадачным специалистом. Этот небольшой тест поможет вам определиться с тем, что нужно именно вам.</p>
+      </div>
+      <div class="startTest">
+        Пройти тест
+      </div>
+    </div>
     <div class="questionCard" id="question1">
-      <div class="question">Черный или белый?</div>
+      <div class="question">Вы попали в пионер-лагерь. Вам предлагают кружки на выбор, какой выберете?</div>
       <div class="answers">
-        <div class="answerInline" id="answer1">Черный</div>
-        <div class="answerInline" id="answer1_1">Белый</div>
+        <div class="answerInline" id="answer1">Журналистики. Я хорошо пишу сочинения</div>
+        <div class="answerInline" id="answer1_1">Рисования. Я даже в художественную школу записан!</div>
+        <div class="answerInline" id="answer1_1">Инженерный кружок. У меня пятерка по математике, и я хотел бы научиться применять знания и мышление на практике</div>
       </div>
     </div>
     <div class="questionCard" id="question2">
