@@ -48,7 +48,10 @@ body{
   font-size: 14pt;
   width: 450px;
 }
-.startTest{
+.buttonBlock{
+  display: flex;
+}
+.introButton{
   font-family: 'Roboto', sans-serif;
   text-align: center;
   font-size: 16pt;
@@ -60,7 +63,7 @@ body{
   border: 2px solid white;
   border-radius: 100px;
 }
-.startTest:hover{
+.introButton:hover{
   border: 2px solid white;
   background-color: white;
   color: black;
