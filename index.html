@@ -16,23 +16,57 @@
         $("#intro").hide("ease-out");
         $("#question1").show();
       });
+      //first question
       $("#answer1").click(function(){
-        $("#question1").hide(".ease-out");
-        $("#question2").show(".ease-in");
+        $("#question1").hide();
+        $("#question2").show();
       });
       $("#answer1_1").click(function(){
-        $("#question1").hide(".ease-in");
-        $("#question2").show(".ease-out");
+        $("#question1").hide();
+        $("#question2").show();
       });
+      $("#answer1_2").click(function(){
+        $("#question1").hide();
+        $("#question2").show();
+      });
+      //second question
       $("#answer2").click(function(){
-        $("#question2").hide(".ease-out");
-        $("#designer").show();
-        $(".description").show();
+        $("#question2").hide();
+        $("#question3").show();
       });
       $("#answer2_1").click(function(){
-        $("#question2").hide(".ease-out");
-        $("#notdesigner").show();
-        $(".description").show();
+        $("#question2").hide();
+        $("#question3").show();
+      });
+      $("#answer2_2").click(function(){
+        $("#question2").hide();
+        $("#question3").show();
+      });
+      //third question
+      $("#answer3").click(function(){
+        $("#question3").hide();
+        $("#question4").show();
+      });
+      $("#answer3_1").click(function(){
+        $("#question3").hide();
+        $("#question4").show();
+      });
+      $("#answer3_2").click(function(){
+        $("#question3").hide();
+        $("#question4").show();
+      });
+      //fourth question
+      $("#answer4").click(function(){
+        $("#question4").hide();
+        $("#question5").show();
+      });
+      $("#answer4_1").click(function(){
+        $("#question4").hide();
+        $("#question5").show();
+      });
+      $("#answer4_2").click(function(){
+        $("#question4").hide();
+        $("#question5").show();
       });
     });
   </script>
@@ -57,14 +91,39 @@
       <div class="answers">
         <div class="answerInline" id="answer1">Журналистики. Я хорошо пишу сочинения</div>
         <div class="answerInline" id="answer1_1">Рисования. Я даже в художественную школу записан!</div>
-        <div class="answerInline" id="answer1_1">Инженерный кружок. У меня пятерка по математике, и я хотел бы научиться применять знания и мышление на практике</div>
+        <div class="answerInline" id="answer1_2">Инженерный кружок. У меня пятерка по математике, и я хотел бы научиться применять знания и мышление на практике</div>
       </div>
     </div>
     <div class="questionCard" id="question2">
-      <div class="question">Надо сделать плакат</div>
+      <div class="question">Когда вы учились в школе, какую похвалу вы чаще всего слышали?</div>
       <div class="answers">
-        <div class="answerInline" id="answer2">Набросаю сам на коленках</div>
-        <div class="answerInline" id="answer2_1">Найму фрилансера</div>
+        <div class="answerInline" id="answer2">Что я очень много читаю. Мне это и родители говорили, и учительница по литературе </div>
+        <div class="answerInline" id="answer2_1">Учительница по математике постоянно меня хвалила</div>
+        <div class="answerInline" id="answer2_2">Учительница по рисованию постоянно говорила, что у меня замечательно выходят необычные рисунки</div>
+      </div>
+    </div>
+    <div class="questionCard" id="question3">
+      <div class="question">Перенесемся в современность. Вы думаете, как провести время с любимой женщиной. Куда пойдете?</div>
+      <div class="answers">
+        <div class="answerInline" id="answer3">В музей современного искусства или фото-выставка. Мне кажется, новые способы отразить реальность интересными </div>
+        <div class="answerInline" id="answer3_1">Лучший вечер - это дома с пиццей, вином и любимой “Теорией Большого взрыва”. Шутки про гиков - самое оно. Я и сам в школе был почти таким же </div>
+        <div class="answerInline" id="answer3_2">Сейчас же проходит книжная ярмарка! Пойдем туда</div>
+      </div>
+    </div>
+    <div class="questionCard" id="question4">
+      <div class="question">Вы пришли на книжную ярмарку. Какой стенд посетите первым?</div>
+      <div class="answers">
+        <div class="answerInline" id="answer4">Пойду к книгам про Интернет и программирование. В этом надо бы разобраться </div>
+        <div class="answerInline" id="answer4_1">Недавно издали прекрасные сборники американских рекламных плакатов 60-х годов. Обожаю</div>
+        <div class="answerInline" id="answer4_2">Пойду на презентацию нового романа. Я всегда хотел сам что-то написать, надо узнать, что меня ждет</div>
+      </div>
+    </div>
+    <div class="questionCard" id="question5">
+      <div class="question">На каких сайтах вы чаще всего засиживаетесь?</div>
+      <div class="answers">
+        <div class="answerInline" id="answer5">Про технологии, космос, новые примочки для компьютера</div>
+        <div class="answerInline" id="answer5_1">Недавно появился сайт “Горький”, наконец-то есть достойное СМИ про чтение. Еще “Арзамас” люблю</div>
+        <div class="answerInline" id="answer5_2">Мне нравятся странички и группы в соцсетях, где выкладывают произведения искусства. Это вдохновляет</div>
       </div>
     </div>
     <div class="questionCard" id="designer">
