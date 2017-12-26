@@ -25,6 +25,10 @@ body{
   width: 900px;
   padding: 40px;
 }
+.questionCard h1{
+  margin: 0 auto;
+  font-family: 'Roboto';
+}
 .question{
   margin: 0 auto;
   font-family: 'Roboto', sans-serif;
@@ -57,4 +61,17 @@ body{
 }
 #question2{
   display: none;
+}
+#designer{
+  display: none;
+}
+#notdesigner{
+  display: none;
+}
+.text{
+  font-family: 'Roboto';
+  font-size: 14pt;
+  color: black;
+  width: 600px;
+  margin: 30% auto;
 }

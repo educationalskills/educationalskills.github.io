@@ -15,7 +15,6 @@
       $("#answer1").click(function(){
         $("#question1").hide(".ease-out");
         $("#question2").show(".ease-in");
-        count = count + 1;
       });
       $("#answer1_1").click(function(){
         $("#question1").hide(".ease-in");
@@ -23,13 +22,12 @@
       });
       $("#answer2").click(function(){
         $("#question2").hide(".ease-out");
+        $("#designer").show();
         $(".description").show();
       });
       $("#answer2_1").click(function(){
         $("#question2").hide(".ease-out");
-        $(".description").show();
-        count = count + 1;
-        alert("your score: " + count.toString());
+        $(".notdesigner").show();
       });
     });
   </script>
@@ -38,22 +36,30 @@
 <body>
   <div class="wrapper">
     <div class="questionCard" id="question1">
-      <div class="question">Стоит 2 стула, на одном хуи дроченые, на другом пики точеные. На какой сам сядешь, на какой мать посадишь.</div>
+      <div class="question">Черный или белый?</div>
       <div class="answers">
-        <div class="answerInline" id="answer1">Мать на хуи, сам на колени</div>
-        <div class="answerInline" id="answer1_1">Пиздец, что за вопросы такие</div>
+        <div class="answerInline" id="answer1">Черный</div>
+        <div class="answerInline" id="answer1_1">Белый</div>
       </div>
     </div>
     <div class="questionCard" id="question2">
-      <div class="question">Стоит 222 стула, на одном хуи дроченые, на другом пики точеные. На какой сам сядешь, на какой мать посадишь.</div>
+      <div class="question">Надо сделать плакат</div>
       <div class="answers">
-        <div class="answerInline" id="answer2">Мать на хуи, сам на колени</div>
-        <div class="answerInline" id="answer2_1">Пиздец, что за вопросы такие</div>
+        <div class="answerInline" id="answer2">Набросаю сам на коленках</div>
+        <div class="answerInline" id="answer2_1">Найму фрилансера</div>
       </div>
+    </div>
+    <div class="questionCard" id="designer">
+      <h1>ТЫ ДИЗАЙНЕР! (снизу текст)</h1>
+    </div>
+    <div class="questionCard" id="notdesigner">
+      <h1>ТЫ НОРМАЛЬНЫЙ ЧЕЛОВЕК!!!! (снизу текст)</h1>
     </div>
   </div>
   <div class="description">
-
+    <div class="text">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores recusandae assumenda ducimus cumque magni rem quaerat, repudiandae odio libero deserunt praesentium, tempore. Illum cupiditate voluptatibus esse doloribus, nesciunt velit, eius.
+    </div>
   </div>
 </body>
 </html>
