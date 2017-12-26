@@ -16,7 +16,7 @@ body{
   width: 100%;
   height: 100%;
   background-color: white;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
 }
@@ -49,6 +49,12 @@ body{
   border: 5px solid black;
   background-color: black;
 }
-#question1{
+.ease-in{
+  transition: top 0.5s ease-in 0.5s;
+}
+.ease-out{
+  transition: top 0.5s ease-out 0.5s;
+}
+#question2{
   display: none;
 }
