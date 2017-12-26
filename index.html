@@ -11,9 +11,11 @@
   crossorigin="anonymous"></script>
   <script>
     $(document).ready(function(){
+      var count = 0;
       $("#answer1").click(function(){
         $("#question1").hide(".ease-out");
         $("#question2").show(".ease-in");
+        count = count + 1;
       });
       $("#answer1_1").click(function(){
         $("#question1").hide(".ease-in");
@@ -26,6 +28,8 @@
       $("#answer2_1").click(function(){
         $("#question2").hide(".ease-out");
         $(".description").show();
+        count = count + 1;
+        alert("your score: " + count.toString());
       });
     });
   </script>
