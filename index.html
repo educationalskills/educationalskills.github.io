@@ -11,62 +11,109 @@
   crossorigin="anonymous"></script>
   <script>
     $(document).ready(function(){
-      var count = 0;
+      var de = 0;
+      var pr = 0;
+      var co = 0;
+      function finishTest(des, pro, cop){
+        if (des > cop & des > pro){
+          $("#designer").show();
+          $(".description").show();
+        }
+        if (pro > des & pro > pro){
+          $("#programmer").show();
+          $(".description").show();
+        }
+        if (cop > des & cop > pro){
+          $("#copywriter").show();
+          $(".description").show();
+        }
+        if(cop == des || cop == pro || des == pro){
+          $("#copywriter").show();
+          $(".description").show();
+        }
+      }
       $(".startTest").click(function(){
-        $("#intro").hide("ease-out");
+        $("#intro").hide();
         $("#question1").show();
       });
       //first question
       $("#answer1").click(function(){
+        co++;
         $("#question1").hide();
         $("#question2").show();
       });
       $("#answer1_1").click(function(){
+        de++;
         $("#question1").hide();
         $("#question2").show();
       });
       $("#answer1_2").click(function(){
+        pr++;
         $("#question1").hide();
         $("#question2").show();
       });
       //second question
       $("#answer2").click(function(){
+        co++;
         $("#question2").hide();
         $("#question3").show();
       });
       $("#answer2_1").click(function(){
+        pr++;
         $("#question2").hide();
         $("#question3").show();
       });
       $("#answer2_2").click(function(){
+        de++;
         $("#question2").hide();
         $("#question3").show();
       });
       //third question
       $("#answer3").click(function(){
+        de++;
         $("#question3").hide();
         $("#question4").show();
       });
       $("#answer3_1").click(function(){
+        pr++;
         $("#question3").hide();
         $("#question4").show();
       });
       $("#answer3_2").click(function(){
+        co++;
         $("#question3").hide();
         $("#question4").show();
       });
       //fourth question
       $("#answer4").click(function(){
+        pr++;
         $("#question4").hide();
         $("#question5").show();
       });
       $("#answer4_1").click(function(){
+        de++;
         $("#question4").hide();
         $("#question5").show();
       });
       $("#answer4_2").click(function(){
+        co++;
         $("#question4").hide();
         $("#question5").show();
+      });
+      $("#answer5").click(function(){
+        pr++;
+        $("#question5").hide();
+        finishTest(de, pr, co);
+      });
+      $("#answer5_1").click(function(){
+        de++;
+        $("#question5").hide();
+        finishTest(de, pr, co);
+      });
+      $("#answer5_2").click(function(){
+        co++;
+        $("#question5").hide();
+        finishTest(de, pr, co);
       });
     });
   </script>
@@ -79,7 +126,7 @@
     </div>
     <div class="questionCard" id="intro">
       <div class="intro">
-        <img src="" alt="">
+        <img src="http://laoblogger.com/images/clip-art-www-2.jpg" alt="">
         <p>Чтобы овладеть фундаментальными знаниями в цифровой сфере совсем не обязательно поступать в университет, даже наоборот. Интернет — это уже не будущее, а настоящее, нужно знать, как зарабатывать по-новому. Классический подход вузов и школ — не подходит для способов заработка в цифровое время. Наш четырёхмесячный интенсив по программированию, дизайну и копирайтингу поможет приобрести навыки заработка 21 века и стать многозадачным специалистом. Этот небольшой тест поможет вам определиться с тем, что нужно именно вам.</p>
       </div>
       <div class="startTest">
@@ -126,16 +173,25 @@
         <div class="answerInline" id="answer5_2">Мне нравятся странички и группы в соцсетях, где выкладывают произведения искусства. Это вдохновляет</div>
       </div>
     </div>
-    <div class="questionCard" id="designer">
-      <h1>ТЫ ДИЗАЙНЕР! (снизу текст)</h1>
+    <div class="resultCard" id="designer">
+      <p>ТЫ ДИЗАЙНЕР!</p>
     </div>
-    <div class="questionCard" id="notdesigner">
-      <h1>ТЫ НОРМАЛЬНЫЙ ЧЕЛОВЕК!!!! (снизу текст)</h1>
+    <div class="resultCard" id="programmer">
+      <p>ТЫ ПРОГРАМИСТ!</p>
+    </div>
+    <div class="resultCard" id="copywriter">
+      <p>ТЫ КОПИРАЙТЕР!</p>
     </div>
   </div>
   <div class="description">
-    <div class="text">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores recusandae assumenda ducimus cumque magni rem quaerat, repudiandae odio libero deserunt praesentium, tempore. Illum cupiditate voluptatibus esse doloribus, nesciunt velit, eius.
+    <div class="text" id="designer">
+      Дизайн — это не только «WordArt» и флаеры у метро. Чтобы создавать качественные продукты даже на базовом уровне, нужно знать, что такое сочетание цветов, какие форматы бывают, какие типы графики используются. Сотрудники ведущих студий будут учить наших учеников отличать продающий дизайн от провального. Без преувеличения, вы больше никогда не сможете смотреть на вывески на улицах без отвращения, потому что вы могли бы сделать лучше.
+    </div>
+    <div class="text" id="programmer">
+      Базовые знания в HTML, CSS и React сегодня нужны даже школьникам. С помощью этих технологий работает большинство сайтов в Интернете. А уж попасть в передовые IT компании не будучи профессиональным адептом HTML, CSS и React невозможно. Записавшись на наш курс вы в короткие сроки получите все необходимые навыки от практикующих веб-мастеров. Они же сориентируют, что делать после окончания четырёхмесячного обучения.
+    </div>
+    <div class="text" id="copywrite">
+      Как это не парадоксально звучит, люди стали больше читать. Не книг, конечно. Просто тексты. Причём в самых разных форматах: короткие твиты, средние посты, длинные профессиональные статьи. Грамотно создавать подходящий под ситуацию текст — искусство. Продающий текст для вашего персонального или бизнес сайта — обязательный навык. Выпускникам нашей программы больше не нужно будет заказывать текст на биржах контента. Написать самому быстрее, приятнее и надёжнее.
     </div>
   </div>
 </body>
