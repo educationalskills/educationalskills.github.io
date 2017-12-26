@@ -1,7 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i');
-*{
-  font-family: 'Roboto', sans-serif;
-}
 body{
   min-width: 1024px;
 }
@@ -14,6 +11,15 @@ body{
   justify-content: center;
   align-items: center;
 }
+.description{
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .questionCard{
   box-sizing: border-box;
   width: 900px;
@@ -21,11 +27,12 @@ body{
 }
 .question{
   margin: 0 auto;
-  font-style: 'Roboto' sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 20pt;
   color: white;
 }
 .answers{
+  font-family: 'Roboto', sans-serif;
   margin-top: 50px;
   display: flex;
   justify-content: space-between;
