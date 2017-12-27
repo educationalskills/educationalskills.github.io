@@ -4,26 +4,33 @@ $(document).ready(function(){
   var co = 0;
   function finishTest(des, pro, cop){
     if (des > cop & des > pro){
-      $("#designer").show();
+      $("#designer").show(300);
       $(".description").show();
       $("#designerText").show();
     }
-    if (pro > des & pro > pro){
-      $("#programmer").show();
-      $(".description").show();
-      $("#programmerText").show();
+    else {
+      if (pro > des & pro > cop){
+        $("#programmer").show(300);
+        $(".description").show();
+        $("#programmerText").show();
+      }
+      else{
+        if (cop > des & cop > pro){
+          $("#copywriter").show(300);
+          $(".description").show();
+          $("#copywriterText").show();
+        }
+        else{
+          if(cop == des || cop == pro || des == pro){
+            $("#copywriter").show(300);
+            $(".description").show();
+            $("#copywriterText").show();
+          }
+        }
+      }
     }
-    if (cop > des & cop > pro){
-      $("#copywriter").show();
-      $(".description").show();
-      $("#copywriterText").show();
-    }
-    if(cop == des || cop == pro || des == pro){
-      $("#copywriter").show();
-      $(".description").show();
-      $("#copywriterText").show();
-    }
-  }
+    console.log(des + " " + pro + " " + cop);
+  };
   $("#startTest").click(function(){
     $("#intro").hide();
     $(".description").hide();
@@ -45,7 +52,7 @@ $(document).ready(function(){
     $("#question2").show();
   });
   $("#answer1_1").click(function(){
-    de++;
+    de = de + 2;
     $("#question1").hide();
     $("#question2").show();
   });
@@ -56,7 +63,7 @@ $(document).ready(function(){
   });
   //second question
   $("#answer2").click(function(){
-    co++;
+    co = co + 2;
     $("#question2").hide();
     $("#question3").show();
   });
@@ -77,7 +84,7 @@ $(document).ready(function(){
     $("#question4").show();
   });
   $("#answer3_1").click(function(){
-    pr++;
+    pr = pr + 2;
     $("#question3").hide();
     $("#question4").show();
   });
@@ -88,7 +95,7 @@ $(document).ready(function(){
   });
   //fourth question
   $("#answer4").click(function(){
-    pr++;
+    pr = pr + 1.5;
     $("#question4").hide();
     $("#question5").show();
   });
@@ -98,7 +105,7 @@ $(document).ready(function(){
     $("#question5").show();
   });
   $("#answer4_2").click(function(){
-    co++;
+    co = co + 1.5;
     $("#question4").hide();
     $("#question5").show();
   });
@@ -108,7 +115,7 @@ $(document).ready(function(){
     finishTest(de, pr, co);
   });
   $("#answer5_1").click(function(){
-    de++;
+    de = de + 1.5;
     $("#question5").hide();
     finishTest(de, pr, co);
   });
@@ -116,5 +123,17 @@ $(document).ready(function(){
     co++;
     $("#question5").hide();
     finishTest(de, pr, co);
+  });
+  $("#learnPro").click(function(){
+    $(".description").show();
+    $("#programmerText").show();
+  });
+  $("#learnDes").click(function(){
+    $(".description").show();
+    $("#designerText").show();
+  });
+  $("#learnCop").click(function(){
+    $(".description").show();
+    $("#copywriteText").show();
   });
 });

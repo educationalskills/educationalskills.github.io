@@ -1,15 +1,43 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i');
+@font-face {
+  font-family: Gilroy; /* Имя шрифта */
+  src: url(fonts/Gilroy-Regular.otf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+   font-family: Gilroy; /* Имя шрифта */
+   src: url(fonts/Gilroy-Medium.otf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+  font-family: Gilroy; /* Имя шрифта */
+  src: url(fonts/Gilroy-Bold.otf); /* Путь к файлу со шрифтом */
+ }
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a{
+  text-decoration: none;
+}
 body{
   min-width: 1024px;
 }
+::-webkit-scrollbar {
+display: none;
+}
 .logo{
   position: absolute;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Gilroy', sans-serif;
   font-size: 30pt;
   font-weight: 700;
   color: white;
-  top: 20px;
+  top: 40px;
   left: 60px;
+}
+.logo a:visited{
+  color: white;
+}
+.logo a{
+  color: white;
 }
 .wrapper{
   margin: 0;
@@ -21,52 +49,61 @@ body{
   align-items: center;
 }
 .description{
-  margin: 0;
   width: 100%;
   background-color: white;
   display: none;
   justify-content: center;
-  align-items: center;
+}
+.introCard{
+  box-sizing: border-box;
+  width: 960px;
+  padding: 40px;
 }
 .questionCard{
   box-sizing: border-box;
-  width: 900px;
+  width: 780px;
   padding: 40px;
 }
-.intro{
+.introBlock{
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 960px;
 }
-.intro img{
-  width: 300px;
-  height: 400px;
+.introBlock img{
+  width: 281px;
+  height: 223px;
 }
-.intro p{
-  font-family: 'Roboto', sans-serif;
-  line-height: 20pt;
+.introBlock p{
+  font-family: 'Gilroy', sans-serif;
+  line-height: 18pt;
+  font-weight: 600;
   color: white;
   font-size: 14pt;
-  width: 450px;
+  width: 500px;
 }
 .buttonBlock{
   display: flex;
+  justify-content: space-around;
 }
 .introButton{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Gilroy', sans-serif;
   text-align: center;
-  font-size: 16pt;
+  font-size: 18pt;
   color: white;
-  margin: 0 auto;
-  margin-top: 70px;
-  width: 300px;
+  width: 220px;
   padding: 10px 10px;
   border: 2px solid white;
   border-radius: 100px;
+  margin-top: 130px;
 }
 .introButton:hover{
   border: 2px solid white;
   background-color: white;
   color: black;
+}
+#toBlock{
+  display: block;
 }
 .resultCard{
   box-sizing: border-box;
@@ -78,23 +115,25 @@ body{
 .resultCard p{
   margin: auto;
   display: block;
-  font-family: 'Roboto';
+  font-family: 'Gilroy';
   font-size: 50pt;
 }
 .question{
   text-align: center;
   margin: 0 auto;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Gilroy', sans-serif;
   font-size: 20pt;
+  font-weight: 600;
   color: white;
 }
 .answers{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Gilroy', sans-serif;
   margin-top: 50px;
   display: flex;
   flex-flow: column;
 }
 .answerInline{
+  font-size: 14pt;
   color: white;
   display: inline-block;
   margin-top: 20px;
@@ -107,6 +146,69 @@ body{
   background-color: white;
   color: black;
 }
+.row{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.text{
+  width: 960px;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.text:first-of-type{
+  margin-top: 50px;
+}
+.text img{
+  width: 300px;
+  height: 300px;
+}
+.text p{
+  font-family: 'Gilroy';
+  font-size: 14pt;
+  color: black;
+  width: 600px;
+}
+.text h1{
+  font-family: 'Gilroy';
+  width: 100%;
+  font-weight: 600;
+  font-size: 40pt;
+  margin-bottom: 50px;
+}
+.marginCenter{
+  margin: 100 auto;
+}
+.toFormButton{
+  font-family: 'Gilroy', sans-serif;
+  text-align: center;
+  font-size: 18pt;
+  color: black;
+  width: 220px;
+  padding: 10px 10px;
+  border: 2px solid black;
+  border-radius: 100px;
+
+  margin-left: 360px;
+}
+.toFormButton:hover{
+  border: 2px solid black;
+  background-color: black;
+  color: white;
+}
+.reviews{
+  width: 960px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+
 #question1{
   display: none;
 }
@@ -134,10 +236,12 @@ body{
   color: white;
   display: none;
 }
-.text{
-  font-family: 'Roboto';
-  font-size: 14pt;
-  color: black;
-  width: 600px;
-  margin: 200px auto;
+#blue{
+  color: #4ba4ff;
+}
+#violete{
+  color: #b95fff;
+}
+#orange{
+  color: #e9b95b;
 }
