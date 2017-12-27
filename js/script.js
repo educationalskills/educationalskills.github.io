@@ -124,16 +124,4 @@ $(document).ready(function(){
     $("#question5").hide();
     finishTest(de, pr, co);
   });
-  $("#learnPro").click(function(){
-    $(".description").show();
-    $("#programmerText").show();
-  });
-  $("#learnDes").click(function(){
-    $(".description").show();
-    $("#designerText").show();
-  });
-  $("#learnCop").click(function(){
-    $(".description").show();
-    $("#copywriteText").show();
-  });
 });

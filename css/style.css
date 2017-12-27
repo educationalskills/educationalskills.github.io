@@ -18,6 +18,7 @@
 a{
   text-decoration: none;
 }
+input {outline:none;}
 body{
   min-width: 1024px;
 }
@@ -27,11 +28,12 @@ display: none;
 .logo{
   position: absolute;
   font-family: 'Gilroy', sans-serif;
-  font-size: 30pt;
+  font-size: 22pt;
   font-weight: 700;
   color: white;
   top: 40px;
   left: 60px;
+  letter-spacing: 0.15em;
 }
 .logo a:visited{
   color: white;
@@ -136,7 +138,7 @@ display: none;
   font-size: 14pt;
   color: white;
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 15px;
   padding: 10px 30px;
   border: 2px solid white;
   border-radius: 100px;
@@ -160,7 +162,7 @@ display: none;
   flex-wrap: wrap;
 }
 .text:first-of-type{
-  margin-top: 50px;
+  margin-top: 150px;
 }
 .text img{
   width: 300px;
@@ -191,7 +193,6 @@ display: none;
   padding: 10px 10px;
   border: 2px solid black;
   border-radius: 100px;
-
   margin-left: 360px;
 }
 .toFormButton:hover{
@@ -200,15 +201,97 @@ display: none;
   color: white;
 }
 .reviews{
+  margin: 150px auto;
   width: 960px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
-
-
-
-
-
+.reviews h1{
+  font-family: 'Gilroy';
+  width: 100%;
+  font-weight: 600;
+  font-size: 40pt;
+  margin-bottom: 50px;
+}
+.reviewCard{
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.reviewCard p{
+  font-family: 'Gilroy';
+  font-size: 16pt;
+}
+.reviewCard img{
+  width: 270px;
+  height: 270px;
+  margin: 70px auto 40px;
+}
+.reviewCard h5{
+  font-family: 'Gilroy';
+  font-size: 14pt;
+  text-align: center;
+  line-height: 18pt;
+}
+.reviesPhoto{
+}
+.form{
+  width: 960px;
+  margin: 150 auto 200;
+  display: flex;
+  flex-flow: column;
+}
+.form h1{
+  font-family: 'Gilroy';
+  width: 100%;
+  font-weight: 600;
+  font-size: 40pt;
+  margin-bottom: 100px;
+  color: white;
+}
+.form input{
+  width: 400px;
+  display: block;
+  font-family: 'Gilroy', sans-serif;
+  font-size: 14pt;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  border: 2px solid white;
+  background-color: black;
+  border-radius: 100px;
+  margin-top: 15px;
+}
+.form button{
+  display: block;
+  font-family: 'Gilroy', sans-serif;
+  text-align: center;
+  font-size: 18pt;
+  color: white;
+  width: 220px;
+  padding: 10px 10px;
+  border: 2px solid white;
+  border-radius: 100px;
+  margin-top: 50px;
+  background-color: black;
+}
+.form button:hover{
+  color: black;
+  border: 2px solid white;
+  border-radius: 100px;
+  background-color: white;
+}
+.copyright{
+  font-family: 'Gilroy', sans-serif;
+  font-size: 8pt;
+  color: white;
+  margin: 20px 20px;
+}
+.bgBlack{
+  background-color: black;
+}
 #question1{
   display: none;
 }
