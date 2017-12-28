@@ -1,14 +1,14 @@
 @font-face {
-  font-family: "Gilroy"; /* Имя шрифта */
-  src: url(../fonts/Gilroy-Regular.woff); /* Путь к файлу со шрифтом */
+  font-family: "Gilroy"; 
+  src: url(../fonts/Gilroy-Regular.woff);
 }
 @font-face {
-   font-family: "GilroyMedium"; /* Имя шрифта */
-   src: url(../fonts/Gilroy-Medium.woff); /* Путь к файлу со шрифтом */
+   font-family: "GilroyMedium"; 
+   src: url(../fonts/Gilroy-Medium.woff);
 }
 @font-face {
-  font-family: "GilroyBold"; /* Имя шрифта */
-  src: url(../fonts/Gilroy-Bold.woff); /* Путь к файлу со шрифтом */
+  font-family: "GilroyBold"; 
+  src: url(../fonts/Gilroy-Bold.woff);
  }
 * {
   -webkit-font-smoothing: antialiased;
@@ -74,7 +74,6 @@ display: none;
 }
 .introBlock img{
   width: 281px;
-  height: 223px;
 }
 .introBlock p{
   font-family: 'Gilroy', sans-serif;
