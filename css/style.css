@@ -209,7 +209,7 @@ display: none;
   padding: 10px 10px;
   border: 2px solid black;
   border-radius: 100px;
-  margin-left: 80px;
+  margin-left: 40px;
 }
 .moreCourses:hover{
   border: 2px solid black;
@@ -231,25 +231,25 @@ display: none;
   margin-bottom: 50px;
 }
 .reviewCard{
-  width: 270px;
+  width: 220px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .reviewCard p{
   font-family: 'Gilroy';
-  font-size: 16pt;
+  font-size: 14pt;
 }
 .reviewCard img{
-  width: 270px;
-  height: 270px;
+  width: 220px;
+  height: 220px;
   margin: 70px auto 40px;
 }
 .reviewCard h5{
   font-family: 'Gilroy';
-  font-size: 14pt;
+  font-size: 12pt;
   text-align: center;
-  line-height: 18pt;
+  line-height: 16pt;
 }
 .reviesPhoto{
 }
@@ -266,6 +266,7 @@ display: none;
   font-size: 40pt;
   margin-bottom: 100px;
   color: white;
+  text-align: center;
 }
 .form input{
   width: 400px;
