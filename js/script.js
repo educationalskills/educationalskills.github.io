@@ -7,24 +7,28 @@ $(document).ready(function(){
       $("#designer").show(300);
       $(".description").show();
       $("#designerText").show();
+      $("#desButton").show();
     }
     else {
       if (pro > des & pro > cop){
         $("#programmer").show(300);
         $(".description").show();
         $("#programmerText").show();
+        $("#proButton").show();
       }
       else{
         if (cop > des & cop > pro){
           $("#copywriter").show(300);
           $(".description").show();
           $("#copywriterText").show();
+          $("#copButton").show();
         }
         else{
           if(cop == des || cop == pro || des == pro){
             $("#copywriter").show(300);
             $(".description").show();
             $("#copywriterText").show();
+            $("#copButton").show();
           }
         }
       }
@@ -123,5 +127,20 @@ $(document).ready(function(){
     co++;
     $("#question5").hide();
     finishTest(de, pr, co);
+  });
+  $("#desButton").click(function(){
+    $("#programmerText").show();
+    $("#copywriterText").show();
+    $("#desButton").hide();
+  });
+  $("#proButton").click(function(){
+    $("#designerText").show();
+    $("#copywriterText").show();
+    $("#proButton").hide();
+  });
+  $("#copButton").click(function(){
+    $("#programmerText").show();
+    $("#designerText").show();
+    $("#copButton").hide();
   });
 });
