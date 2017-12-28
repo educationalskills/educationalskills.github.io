@@ -4,28 +4,28 @@ $(document).ready(function(){
   var co = 0;
   function finishTest(des, pro, cop){
     if (des > cop & des > pro){
-      $("#designer").show(300);
+      $("#designer").show();
       $(".description").show();
       $("#designerText").show();
       $("#desButton").show();
     }
     else {
       if (pro > des & pro > cop){
-        $("#programmer").show(300);
+        $("#programmer").show();
         $(".description").show();
         $("#programmerText").show();
         $("#proButton").show();
       }
       else{
         if (cop > des & cop > pro){
-          $("#copywriter").show(300);
+          $("#copywriter").show();
           $(".description").show();
           $("#copywriterText").show();
           $("#copButton").show();
         }
         else{
           if(cop == des || cop == pro || des == pro){
-            $("#copywriter").show(300);
+            $("#copywriter").show();
             $(".description").show();
             $("#copywriterText").show();
             $("#copButton").show();
