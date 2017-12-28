@@ -1,13 +1,13 @@
 @font-face {
-  font-family: "Gilroy"; 
+  font-family: "Gilroy";
   src: url(../fonts/Gilroy-Regular.woff);
 }
 @font-face {
-   font-family: "GilroyMedium"; 
+   font-family: "GilroyMedium";
    src: url(../fonts/Gilroy-Medium.woff);
 }
 @font-face {
-  font-family: "GilroyBold"; 
+  font-family: "GilroyBold";
   src: url(../fonts/Gilroy-Bold.woff);
  }
 * {
@@ -234,6 +234,14 @@ display: none;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.price{
+  font-family: 'GilroyMedium';
+  font-size: 28pt;
+  color: black;
+  text-decoration: underline;
+  margin-top: -60px;
+  margin-left: 360px;
 }
 .reviewCard p{
   font-family: 'Gilroy';
