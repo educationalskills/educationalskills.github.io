@@ -1,15 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i');
 @font-face {
-  font-family: Gilroy; /* Имя шрифта */
-  src: url(fonts/Gilroy-Regular.otf); /* Путь к файлу со шрифтом */
+  font-family: "Gilroy"; /* Имя шрифта */
+  src: url(../fonts/Gilroy-Regular.woff); /* Путь к файлу со шрифтом */
 }
 @font-face {
-   font-family: Gilroy; /* Имя шрифта */
-   src: url(fonts/Gilroy-Medium.otf); /* Путь к файлу со шрифтом */
+   font-family: "GilroyMedium"; /* Имя шрифта */
+   src: url(../fonts/Gilroy-Medium.woff); /* Путь к файлу со шрифтом */
 }
 @font-face {
-  font-family: Gilroy; /* Имя шрифта */
-  src: url(fonts/Gilroy-Bold.otf); /* Путь к файлу со шрифтом */
+  font-family: "GilroyBold"; /* Имя шрифта */
+  src: url(../fonts/Gilroy-Bold.woff); /* Путь к файлу со шрифтом */
  }
 * {
   -webkit-font-smoothing: antialiased;
@@ -18,7 +17,8 @@
 a{
   text-decoration: none;
 }
-input {outline:none;}
+input
+{outline:none;}
 body{
   min-width: 1024px;
 }
@@ -27,7 +27,7 @@ display: none;
 }
 .logo{
   position: absolute;
-  font-family: 'Gilroy', sans-serif;
+  font-family: 'GilroyBold', sans-serif;
   font-size: 22pt;
   font-weight: 700;
   color: white;
@@ -123,7 +123,7 @@ display: none;
 .question{
   text-align: center;
   margin: 0 auto;
-  font-family: 'Gilroy', sans-serif;
+  font-family: 'GilroyMedium', sans-serif;
   font-size: 20pt;
   font-weight: 600;
   color: white;
@@ -175,7 +175,7 @@ display: none;
   width: 600px;
 }
 .text h1{
-  font-family: 'Gilroy';
+  font-family: 'GilroyMedium';
   width: 100%;
   font-weight: 600;
   font-size: 40pt;
@@ -208,7 +208,7 @@ display: none;
   flex-wrap: wrap;
 }
 .reviews h1{
-  font-family: 'Gilroy';
+  font-family: 'GilroyMedium';
   width: 100%;
   font-weight: 600;
   font-size: 40pt;
@@ -244,7 +244,7 @@ display: none;
   flex-flow: column;
 }
 .form h1{
-  font-family: 'Gilroy';
+  font-family: 'GilroyMedium';
   width: 100%;
   font-weight: 600;
   font-size: 40pt;
