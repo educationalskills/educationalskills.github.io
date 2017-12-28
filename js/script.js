@@ -45,6 +45,7 @@ $(document).ready(function(){
   });
   $("#skipTest").click(function(){
     $(".description").show();
+    $("#skipTest").hide();
     $("#designerText").show();
     $("#programmerText").show();
     $("#copywriterText").show();
